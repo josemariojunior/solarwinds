@@ -1,9 +1,9 @@
 # TCP Server Script with TLS and Certificate Authentication
 param (
-    [string]$serverIp = "10.160.207.207",  # Server IP address
+    [string]$serverIp = "X.X.X.X",  # Server IP address
     [int]$port = 12346,               # Server port
     [string]$certPath = "C:\INSTALL\testserver.pfx",  # Path to server certificate
-    [string]$certPassword = "Password1"  # Password for server certificate
+    [string]$certPassword = "Password"  # Password for server certificate
 )
 try {
     # Load the server certificate
