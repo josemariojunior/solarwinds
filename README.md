@@ -1,2 +1,2 @@
 # solarwinds
-SolarWinds SWQL, Scripts and Customization
+SolarWinds SWQL, SQL, Scripts and Customization
