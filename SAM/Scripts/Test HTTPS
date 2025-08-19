@@ -1,0 +1,16 @@
+# PowerShell Script that test if the URL is UP and save the output in a text file.
+
+do {
+    $response = Invoke-WebRequest -Uri 'https://www.google.com' -UseBasicParsing |
+        Select-Object StatusDescription, StatusCode
+
+    $output = "{0} – {1}" -f (Get-Date), $response
+
+    # Exibe na tela
+    Write-Host $output
+
+    # Salva no arquivo
+    $output | Out-File c:\temp\testPS.txt -Append
+
+    Start-Sleep -Seconds 5
+} until ($false)
